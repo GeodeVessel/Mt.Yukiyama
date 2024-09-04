@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(38, 17, 73);
+    color: aliceblue;
+    font-family: "Madimi One", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    margin: 0px;
+}
+
+button {
+    background-color: rgb(82, 69, 133);
+    color: aliceblue;
+    font-family: "Madimi One", sans-serif;
+}
+
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+main {
+    text-align: center;
+    max-width: 90%;
+}
+
+img {
+    max-width: 90%;
+
+}

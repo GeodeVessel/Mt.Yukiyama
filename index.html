@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/995175871461728256/1279441177786974228/yukiyamalogo2.png?ex=66d473f3&is=66d32273&hm=6c7854bd1e8dfffdef21c6ccd9c33b835ae1e1a087e6060837a91ff0cbad8ae1&">
+    <title>Mt. Yukiyama</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-X">
+            <img src="img/general/yabuoniTitlecard.png" alt="">
+            <p>Mt. Yukiyama: A Jornada</p>
+            <button class="btn-proximo" data-proximo="0">Começar</button>
+        </div>
+        <div class="passo" id="passo-0">
+            <img src="img/general/yabuoniIntro.png" alt="">
+            <p>Você é um pequeno demônio com a forma de um arbusto que decide provar à todas as outras criaturas da região que é forte e destemido, e para isso, promete escalar até o topo da montanha mais alta da região: o Monte Yukiyama. Há dois caminhos para chegar lá...</p>
+            <button class="btn-proximo" data-proximo="1a">Caminho da Floresta</button>
+            <button class="btn-proximo" data-proximo="2a">Caminho do Deserto</button>
+        </div>
+        <div class="passo" id="passo-1a">
+            <img src="img/general/cenario-placeholderN.png" alt="">
+            <p>Você escolhe seguir pela floresta assombrada, Maboroshimori, onde fantasmas vagam por toda parte carregando velas, estátuas e outros itens diversos. São oferendas, os espiritos daqui adoram elas. </p>
+            <button class="btn-proximo" data-proximo="1b">...</button>
+        </div>
+        <div class="passo" id="passo-1b">
+            <img src="img/general/cenario-placeholderN.png" alt="">
+            <p>Depois de caminhar por alguns minutos, você se depara com Kaerushin, um sapo gigante com um gosto estranho pra oferendas. É extremamente vaidoso e traiçoeiro, e infelizmente, bloqueia a única passagem adiante, então você tenta falar com ele...</p>
+            <button class="btn-proximo" data-proximo="3">“Com licença, senhor, eu estou a caminho do Monte Yukiyama, poderia me deixar passar?”</button>
+            <button class="btn-proximo" data-proximo="4">“Saia da frente, sapo! Eu tenho uma jornada importante pela frente!”</button>
+        </div>
+        <div class="passo" id="passo-2a">
+            <img src="img/hoshizuna/hona1.png" alt="">
+            <p>Os finos grãos de areia se espalham até o horizonte no deserto estelar Hoshizuna. Alguns desses grãos se juntam e formam "estrelas" que levitam acima de você, como um pequeno universo ao seu redor.</p>
+            <button class="btn-proximo" data-proximo="2b">...</button>
+        </div>
+        <div class="passo" id="passo-2b">
+            <img src="img/hoshizuna/hona2.png" alt="">
+            <p>De repente, um grande tremor se espalha pelo chão, e uma figura com a silhueta de um planeta emerge da areia cintilante...</p>
+            <button class="btn-proximo" data-proximo="5">“Quem é você?”</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <img src="img/general/cenario-placeholderG.png" alt="">
+            <p>“Ora, um pequenino veio aqui achando que iria passar sem oferecer nada em troca! Não conhece os modos daqui? Me dê algo valioso que eu te recompensarei com a passagem que tanto deseja!” Mesmo irritado, você procura alguma possível oferenda por perto...</p>
+            <button class="btn-proximo" data-proximo="8">Um dos seus chifres...</button>
+            <button class="btn-proximo" data-proximo="9">Uma vela acesa...</button>
+            <button class="btn-proximo" data-proximo="9">Uma pequena escultura...</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <img src="img/general/cenario-placeholderB.png" alt="">
+            <p>“AH! Que ultrage! Índole corrupta! Com essas maneiras não irá a lugar nenhum... Suma daqui!” Ele te chuta pra longe, de volta para o início...</p>
+            <button class="btn-proximo" data-proximo="X">Tentar novamente</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <img src="img/hoshizuna/hona3.png" alt="">
+            <p>A criatura responde: “MEU NOME É WAKUSEI-SHIN! O MAIS PODEROSO DE TODO O DESERTO! NENHUM SER JAMAIS PASSOU POR MIM! MAS SE ACHA QUE CONSEGUE, DEVE RESPONDER UM DE MEUS ENIGMAS CORRETAMENTE. APENAS ASSIM, TERÁ A LIBERAÇÃO QUE DESEJA!”</p>
+            <button class="btn-proximo" data-proximo="6">Aceitar o desafio...</button>
+            <button class="btn-proximo" data-proximo="7">Recusar o desafio...</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <img src="img/hoshizuna/hona4.png" alt="">
+            <p>“POIS BEM...” ele respondeu: “TENHO OLHOS MAS NÃO VEJO, TENHO BOCA MAS NÃO FALO, TENHO OUVIDOS MAS NÃO OUÇO, PORÉM CONSIGO JULGAR COMO NINGUÉM. QUEM SOU EU?”</p>
+            <button class="btn-proximo" data-proximo="11">Uma estátua.</button>
+            <button class="btn-proximo" data-proximo="10">O espelho.</button>
+            <button class="btn-proximo" data-proximo="11">O alho.</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <img src="img/general/cenario-placeholderB.png" alt="">
+            <p>“ENTÃO POR QUE VEIO AQUI? SUMA!” Você é jogado para longe por um redemoinho de areia, de volta ao início...</p>
+            <button class="btn-proximo" data-proximo="X">Tentar novamente</button>
+        </div>
+        <div class="passo" id="passo-8">
+            <img src="img/general/cenario-placeholderG.png" alt="">
+            <p>“Ufufufu! Que delicioso! Há anos que não recebo algo tão bom! Pode passar, meu companheiro, você me convenceu! Muito obrigado!” Ele sai da frente do caminho, abrindo a passagem para a próxima área...</p>
+            <button class="btn-proximo" data-proximo="12a">Caminho das Flores</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <img src="img/general/cenario-placeholderB.png" alt="">
+            <p>“BLEAUGH! Nada apetitoso! Mas que oferenda ridicula! SUMA!” Ele te chuta pra longe, de volta para o início...</p>
+            <button class="btn-proximo" data-proximo="X">Tentar novamente</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <img src="img/hoshizuna/hona5.png" alt="">
+            <p>“CERTO! APÓS ANOS, ALGUÉM RESPONDE CORRETAMENTE AOS MEUS QUESTIONAMENTOS. VOCÊ PODE PASSAR!” Ele sai do caminho, parecendo extremamente comovido. O caminho se abre para a próxima área...</p>
+            <button class="btn-proximo" data-proximo="13a">Caminho das Fontes termais</button>
+        </div>
+        <div class="passo" id="passo-11">
+            <img src="img/general/cenario-placeholderB.png" alt="">
+            <p>“ERRADO!” Você é jogado para longe por um redemoinho de areia, de volta ao início...</p>
+            <button class="btn-proximo" data-proximo="X">Tentar novamente</button>
+        </div>
+        <div class="passo" id="passo-12a">
+            <img src="img/general/cenario-placeholderN.png" alt="">
+            <p>Em seguida, você se encontra em um mar de flores, nas planícies de Hanabatake. Durante o caminho, você para de vez em quando para colher algumas das mais bonitas...</p>
+            <button class="btn-proximo" data-proximo="12b">...</button>
+        </div>
+        <div class="passo" id="passo-12b">
+            <img src="img/general/cenario-placeholderN.png" alt="">
+            <p>De repente, um casal de abelhas, Sra. Ikachi e Sra. Hayachi, se aproximam desesperadas pedindo ajuda com seu jardim, que foi infestado por vespas. Você, triunfantemente, responde...</p>
+            <button class="btn-proximo" data-proximo="14">“Claro que sim! Afinal, alguém tão potente quanto EU não deixaria de ajudar os outros!”</button>
+            <button class="btn-proximo" data-proximo="15">“Estou em uma jornada importante, não posso ser interrompido tão repentinamente!”</button>
+        </div>
+        <div class="passo" id="passo-13a">
+            <img src="img/onsenchi/onchi1.png" alt="">
+            <p>As fontes termais artificiais de Onsen-chi já foram abandonadas a anos, mas mesmo assim, continuam operando por negligência de seus antigos regentes, pois falharam em desativar as caldeiras conectadas às bacias d'água da região.</p>
+            <button class="btn-proximo" data-proximo="13b">...</button>
+        </div>
+        <div class="passo" id="passo-13b">
+            <img src="img/onsenchi/onchi2.png" alt="">
+            <p>Você sente o ar a sua volta ficar mais e mais quente, até que você se depara com um espírito feito de vapor, que estava em uma poça próxima à uma das caldeiras. “Com licença! Me ajude! Meu nome é Jōki! Essa coisa tá maluca! Faça alguma coisa, por favor!” Como resposta, você diz...</p>
+            <button class="btn-proximo" data-proximo="16">"Claro, claro!"</button>
+            <button class="btn-proximo" data-proximo="17">"Pode ser daqui a pouco?"</button>
+        </div>
+        <div class="passo" id="passo-14">
+            <img src="img/general/cenario-placeholderG.png" alt="">
+            <p>As abelhas se alegram e te guiam até uma pequena cabana em formato de colmeia, escondida debaixo de uma colina. Assim, as vespas percebem sua presença intrusiva, tomando olhares agressivos. O que você irá fazer para espantá-las?</p>
+            <button class="btn-proximo" data-proximo="19">Atacá-las com seu chifre...</button>
+            <button class="btn-proximo" data-proximo="19">Intimidá-las com sua aparencia...</button>
+            <button class="btn-proximo" data-proximo="18">Atraí-las com suas flores...</button>
+        </div>
+        <div class="passo" id="passo-15">
+            <img src="img/general/cenario-placeholderB.png" alt="">
+            <p>Uma das vespas que estava por perto ouve isso e começa a te perseguir indefinitivamente. Quando você percebe, voltou para o início...</p>
+            <button class="btn-proximo" data-proximo="X">Tentar novamente</button>
+        </div>
+        <div class="passo" id="passo-16">
+            <img src="img/onsenchi/onchi3.png" alt="">
+            <p>“Muito obrigado! Agora, eu não sei como mexer nessa coisa, até por que ela nunca teve esse tipo de problema...” Sem nenhuma dica aparente para como acalmar a maquina, você tenta...</p>
+            <button class="btn-proximo" data-proximo="17">Abaná-la com um léque...</button>
+            <button class="btn-proximo" data-proximo="20">Puxar uma alavanca aleatória...</button>
+            <button class="btn-proximo" data-proximo="17">Jogar água nela...</button>
+        </div>
+        <div class="passo" id="passo-17">
+            <img src="img/general/cenario-placeholderB.png" alt="">
+            <p>De repende, a caldeira solta um grande jato de fumaça que te joga pra longe, de volta para o início...</p>
+            <button class="btn-proximo" data-proximo="X">Tentar novamente</button>
+        </div>
+        <div class="passo" id="passo-18">
+            <img src="img/general/cenario-placeholderG.png" alt="">
+            <p>Elas te seguem por alguns minutos, até que você chega em um penhasco em frente ao oceano, então, você joga as flores na água e, surpreendentemente, elas vão atrás das flores, te ignorando completamente. Ao voltar, as abelhas te agradecem grandemente e você segue em frente...</p>
+            <button class="btn-proximo" data-proximo="21">Caminho da Montanha</button>
+        </div>
+        <div class="passo" id="passo-19">
+            <img src="img/general/cenario-placeholderB.png" alt="">
+            <p>Antes que você pudesse fazer qualquer coisa, elas começam a te perseguir furiosamente. Elas te fazem voltar todo o caminho desde o início...</p>
+            <button class="btn-proximo" data-proximo="X">Tentar novamente</button>
+        </div>
+        <div class="passo" id="passo-20">
+            <img src="img/onsenchi/onchi4.png" alt="">
+            <p>Tentando puxar a alavanca, um de seu chifres acaba se prendendo e quebrando nela, porém finalmente, a caldeira descontrolada é apaziguada. “Valeu, meu amigo!” Você nota que Jōki voltou a sua forma normal: “Olha só, fique a vontade pra visitar aqui quando quiser. Ninguém mais vem aqui, é uma beleza!” Depois de tanto caos, você se prepara para seguir em frente...</p>
+            <button class="btn-proximo" data-proximo="21">Caminho da Montanha</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
